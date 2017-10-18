@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Creative - Bootstrap 3 Responsive Admin Template">
+    <meta name="author" content="GeeksLabs">
+    <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
+    <link rel="shortcut icon" href="img/favicon.png">
+
+    <title>NOTEAPP后台管理</title>
+
+    <!-- Bootstrap CSS -->    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap theme -->
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <!--external css-->
+    <!-- font icon -->
+    <link href="css/elegant-icons-style.css" rel="stylesheet" />
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <!-- Custom styles -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-responsive.css" rel="stylesheet" />
+</head>
+
+  <body class="login-img3-body">
+
+    <div class="container">
+
+      <div class="login-form">        
+        <div class="login-wrap">
+            <p class="login-img"><i class="icon_lock_alt"></i></p>
+            <div class="input-group">
+              <span class="input-group-addon"><i class="icon_profile"></i></span>
+              <input id="username" type="text" class="form-control" placeholder="Username" autofocus>
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="icon_key_alt"></i></span>
+                <input id="userpassword" type="password" class="form-control" placeholder="Password">
+            </div>
+            <button id="loginButton" data-loading-text="Loading..." class="btn btn-primary btn-lg btn-block">Login</button>
+            <button id="singupButton" class="btn btn-info btn-lg btn-block">Signup</button>
+        </div>
+    </div>
+ </body>
+ <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+ <script type="text/javascript" src="myjs/commontool.js"></script>
+ <script type="text/javascript" src="myjs/login.js"></script>
+ <script type="text/javascript" src="myjs/cookie.js"></script>
+ <script type="text/javascript">
+ 	     $('#loginButton').click(function(){
+ 	     	var $btn = $(this).button('登录中。。。');
+ 	     	var arrIds = ["#username","#userpassword"];
+ 	     	if(tool.isNull(arrIds)){
+ 	     		loginObj.loginIndex(cookietool,function(){
+ 	     			$btn.button('reset');
+ 	     		});
+ 	     	}
+ 	     	else{
+ 	     		alert("用户名或者密码不能为空");
+ 	     	}
+ 	     });
+ </script>
+</html>

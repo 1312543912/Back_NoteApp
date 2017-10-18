@@ -1,0 +1,303 @@
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Creative - Bootstrap 3 Responsive Admin Template">
+		<meta name="author" content="GeeksLabs">
+		<meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
+		<link rel="shortcut icon" href="img/favicon.png">
+		<link rel="stylesheet" type="text/css" href="mycss/reset.css" />
+		<title>后台管理</title>
+	</head>
+	<!-- 新 Bootstrap 核心 CSS 文件 -->
+	<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="mycss/back.css" />
+	<style type="text/css">
+		nav {
+			background-color: #cf4646;
+		}
+		
+		.navbar-header {
+			cursor: pointer;
+		}
+		
+		.navbar-brand,
+		.navbar-nav a {
+			color: #efefef !important;
+		}
+		
+		.navbar-nav {
+			float: right;
+		}
+		
+		.navbar-nav>li>a:hover {
+			color: #00ACED !important;
+		}
+		
+		.navbar-default {
+			background-color: #cf4646;
+		}
+		
+		#navbar>ul {
+			float: left;
+		}
+		
+		.jumbotron {
+			background-color: #cf4646;
+			color: #FFFFFF;
+		}
+		
+		@media screen and (min-width:768px) .jumbotron {
+			padding-top: 48px;
+			padding-bottom: 48px;
+		}
+		
+		.jumbotron>p {
+			text-align: center;
+			margin: 0 auto;
+			margin-top: 50px !important;
+		}
+		
+		.jumbotron>h1 {
+			text-align: center;
+		}
+		
+		.lead {
+			text-align: center;
+			margin-top: 50px !important;
+		}
+		
+		.footer-divider {
+			margin: 50px 0;
+		}
+		
+		footer>p {
+			text-align: center;
+		}
+		
+		footer>div {
+			text-align: center;
+			margin-bottom: 50px;
+		}
+	</style>
+
+	<body>
+		<nav class="navbar navbar-fixed-top site-navbar navbar-default">
+			<div class="container">
+				<!--导航左侧-->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+					<a class="navbar-brand">TxSpring中文网</a>
+				</div>
+				<!--导航右侧-->
+				<div id="navbar" class="collapse navbar-collapse navbar-right">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="#">首页</a>
+						</li>
+						<li>
+							<a href="#">中文文档</a>
+						</li>
+						<li>
+							<a href="#">入门指南</a>
+						</li>
+						<li>
+							<a href="#">API</a>
+						</li>
+						<li>
+							<a href="#">插件开发</a>
+						</li>
+						<li>
+							<a href="#">常见问题</a>
+						</li>
+						<li>
+							<a href="#">使用技巧</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<header class="jumbotron">
+			<h1>TxSpring</h1>
+			<p class="lead">用自动化构建工具增强你的工作流程！</p>
+			<p>
+				<a id="startNow" class="btn btn-lg btn-default btn-getting-started" role="button">开始使用</a>
+			</p>
+		</header>
+		<!--
+			初始页面
+		 -->
+		<main id="writeNow" class="benefits container">
+			<!-- Example row of columns -->
+			<div class="row">
+				<div class="col-md-6">
+					<h2>易于使用</h2>
+					<p>通过代码优于配置的策略，Gulp 让简单的任务简单，复杂的任务可管理。</p>
+				</div>
+				<div class="col-md-6">
+					<h2>构建快速</h2>
+					<p>利用 Node.js 流的威力，你可以快速构建项目并减少频繁的 IO 操作。</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<h2>插件高质</h2>
+					<p>Gulp 严格的插件指南确保插件如你期望的那样简洁高质得工作。</p>
+				</div>
+				<div class="col-md-6">
+					<h2>易于学习</h2>
+					<p>通过最少的 API，掌握 Gulp 毫不费力，构建工作尽在掌握：如同一系列流管道。</p>
+				</div>
+			</div>
+		</main>
+		<!--
+			编辑部分
+		 -->
+		<header id="writing" style="display: none;">
+			<div class="container">
+				<div id="oneFloor" class="row">
+
+				</div>
+				<div id="twoFloor" class="row">
+					<div class="col-sm-2 col-md-6 col-lg-4">
+						<ul id="menu" class="nav nav-pills nav-stacked">
+							<li class="active">
+								<a>后台管理</a>
+							</li>
+							<li name="writeArticle0" data-toggle="modal" data-target="#myModal">
+								<a>写文章</a>
+							</li>
+							<li>
+								<a>已写文章</a>
+							</li>
+							<li>
+								<a>功能3</a>
+							</li>
+							<li>
+								<a>功能4</a>
+							</li>
+							<li>
+								<a>功能5</a>
+							</li>
+						</ul>
+					</div>
+
+					<form class="form-horizontal" role="form">
+						<div class="col-sm-10 col-md-6 col-lg-8">
+
+							<div id="xieWenZhng" class="hide">
+								<ul class="nav nav-pills nav-stacked">
+									<li class="active">
+										<a>写文章</a>
+									</li>
+								</ul>
+								<div class="form-group">
+									<label class="col-sm-2 control-label">类别:</label>
+									<div class="col-sm-10">
+										<p class="form-control-static articleTitle"></p>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputPassword" class="col-sm-2 control-label">标题:</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control" id="inputPassword" placeholder="标题">
+									</div>
+								</div>
+								<div id="editor">
+
+								</div>
+								<button style="margin-top: 50px;" type="button" id="submitButton" class="btn btn-info btn-lg">OVER</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</header>
+
+		<div id="showMessage" class="container" style="margin-top: 10px;">
+
+		</div>
+		<!--
+        	footer部分
+        -->
+		<hr class="footer-divider">
+		<div class="container">
+			<footer>
+				<p>版权所有:TxSpring</p>
+				<p>作者:后辈小生</p>
+				<div>联系:2019555618@qq.com</div>
+			</footer>
+		</div>
+
+		<!-- 模态框（Modal） -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title" id="myModalLabel">选择文章分类:</h4>
+					</div>
+					<div class="modal-body">
+						<table class="table table-bordered">
+							<tbody id="class">
+								<tr>
+									<td name="css"><img src="img/CSS.png" class="img-rounded"><img class="hide" src="img/selected.png"></td>
+									<td name="javascript"><img src="img/html.png" class="img-rounded"><img class="hide" src="img/selected.png"></td>
+									<td name="mui"><img src="img/M.png" class="img-rounded"><img class="hide" src="img/selected.png"></td>
+								</tr>
+								<tr>
+									<td name="nodejs"><img src="img/nodejs.png" class="img-rounded"><img class="hide" src="img/selected.png"></td>
+									<td name="mysql"><img src="img/MySQL.png" class="img-rounded"><img class="hide" src="img/selected.png"></td>
+									<td name="project"><img src="img/xiangmu.png" class="img-rounded"><img class="selectedImg" src="img/selected.png"></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="modal-footer">
+						<button id="classSubmit" type="button" class="btn btn-primary">确定所选分类</button>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal -->
+		</div>
+	</body>
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- 富文本编辑器cdn -->
+	<script src="//unpkg.com/wangeditor/release/wangEditor.min.js"></script>
+	<!-- 自己写的本页js -->
+	<script src="myjs/writenote.js"></script>
+	<!-- 操作cookie -->
+	<script src="myjs/cookie.js"></script>
+	<script type="text/javascript">
+		var selectClass = "project";
+		var E = window.wangEditor;
+		var editor = new E('#editor');
+		editor.create();
+		//绑定选类别的事件
+		writeObj.SelecteClass();
+		//绑定提交选中类别事件
+		writeObj.classSubmit();
+		//绑定写完文章提交按钮
+		writeObj.subMitAll();
+		//绑定开始写文章按钮
+		writeObj.wirtingNote();
+		//当myModal显示时候下面的隐藏
+		$('#myModal').on('show.bs.modal', function() {
+			$('#xieWenZhng').attr("class", "hide");
+			$("#inputPassword").val("");
+			editor.txt.html("");
+		});
+	</script>
+
+</html>
